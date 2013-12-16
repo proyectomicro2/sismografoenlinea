@@ -1,0 +1,8 @@
+﻿Hello <%USERNAME%>
+
+Welcome to our site <br> </br>
+Your account is almost ready to use. You must verify with us to use your account <br> </br>
+[ <a href = "%VerificationUrl%"> CLICK HERE TO VERIFY YOUR ACCOUNT. </a>] <br/><br/>
+
+Once you click on the link you will be redirected to our login page! <br/><br/>
+Thanks

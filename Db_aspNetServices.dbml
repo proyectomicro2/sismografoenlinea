@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="AspNetServicesDB" Class="Db_aspNetServicesDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=AMAURY-PC;Initial Catalog=AspNetServicesDB;Persist Security Info=True;User ID=sa" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="AspNetServicesDBConnectionString1" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.alarmas" Member="alarmas">
+    <Type Name="alarmas">
+      <Column Name="username" Type="System.String" DbType="VarChar(30) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="nombre" Type="System.String" DbType="VarChar(30) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="desde" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="hasta" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.mediciones" Member="mediciones">
+    <Type Name="mediciones">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="magnitud" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="tiempo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="fecha" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Function Name="dbo.GetEmailAddress" Method="GetEmailAddress">
+    <Parameter Name="nombreUsuario" Type="System.String" DbType="VarChar(30)" />
+    <Parameter Name="correo" Type="System.String" DbType="VarChar(50)" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.lecturasDelDia" Method="lecturasDelDia">
+    <Parameter Name="indice" Type="System.Int32" DbType="Int" />
+    <Parameter Name="magnitud" Type="System.String" DbType="VarChar(5)" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.lecturasDelDia_CantRegistros" Method="lecturasDelDia_CantRegistros">
+    <Parameter Name="magnitud" Type="System.String" DbType="VarChar(5)" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.mostrarRegistrosMasActuales" Method="mostrarRegistrosMasActuales">
+    <Parameter Name="indice" Type="System.Int32" DbType="Int" />
+    <Parameter Name="magnitud" Type="System.String" DbType="VarChar(5)" Direction="InOut" />
+    <Parameter Name="antepenultimoid" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+</Database>

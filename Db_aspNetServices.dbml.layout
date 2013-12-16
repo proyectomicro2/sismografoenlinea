@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="Db_aspNetServices">
+  <DataContextMoniker Name="/Db_aspNetServicesDataContext" />
+  <nestedChildShapes>
+    <classShape Id="f65f03ce-af32-4ff1-80f7-055d89be5519" absoluteBounds="3.875, 1.25, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/Db_aspNetServicesDataContext/alarmas" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a434f76a-4f99-43af-806d-0650bee2f182" absoluteBounds="3.89, 1.71, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6a0448e2-0014-42e7-8337-4a4c4bb5bd96" absoluteBounds="6.375, 2.625, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/Db_aspNetServicesDataContext/mediciones" />
+      <nestedChildShapes>
+        <elementListCompartment Id="411d2aa3-11d6-43cf-b93b-97ca49336bbd" absoluteBounds="6.39, 3.085, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
